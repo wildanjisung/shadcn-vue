@@ -1,12 +1,21 @@
-# Vue 3 + TypeScript + Vite
+# About
+This project is for getting started with ShadCN in Vue.js.
+Follow this tutorial to [get started](https://www.shadcn-vue.com/docs/installation/vite.html) 
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
-
----
-
+# Snipets
 - add button
-```
+```bash
 npx shadcn-vue@latest add button
+```
+- implement this component
+```ts
+<script setup lang="ts">
+import { Button } from '@/components/ui/button'
+</script>
+
+<template>
+  <div>
+    <Button>Click me</Button>
+  </div>
+</template>
 ```
